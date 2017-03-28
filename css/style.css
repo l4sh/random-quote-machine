@@ -1,0 +1,76 @@
+/** Typography **/
+@font-face {
+  font-family: 'Goudy Bookletter 1911';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Goudy Bookletter 1911'), local('GoudyBookletter1911'), url('https://fonts.gstatic.com/s/goudybookletter1911/v6/l5lwlGTN3pEY5Bf-rQEuIAQibyVIKv8boZ0oFv0g-Lo.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Goudy Bookletter 1911';
+  background-color: #f8f8f8;
+}
+
+
+#wrapper {
+  text-align: center;
+  height: 100%;
+}
+
+#wrapper:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+#quote-box {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2rem;
+  text-align: right;
+  color: #222;
+  width: 600px;
+}
+
+#quote-author:before {
+  content: '―';
+}
+
+#quote-author {
+  margin-top: 5px;
+  text-align: right;
+  font-size: 1.7rem;
+  color: #444;
+}
+
+#quote-buttons {
+  margin-top: 10px;
+  text-align: right;
+}
+
+#quote-buttons a, #quote-buttons a:link,a:hover,a:visited {
+  text-decoration: none;
+  color: #888;
+  font-size: 1.5rem;
+  margin-left: 1.3rem;
+  text-shadow: 3px 3px 1px #ddd;
+}
+
+@media (max-width: 650px) {
+  #quote-box {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  #quote-author {
+    font-size: 1.3rem;
+  }
+}
